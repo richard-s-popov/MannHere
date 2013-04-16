@@ -1,236 +1,183 @@
 ﻿@{
+    ViewBag.Title = "Тренинг Игоря Манна в Томске";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="main">
-	<div class="bg-main">
-		<div class="container_12">
-			<div>
-				<div class="grid_12">
-					<!-- header -->
-					<header>
-						<h1><a href="http://static.livedemo00.template-help.com/wt_39870/index.html">Игорь Манн</a></h1>
-						<div class="logo-text">Живой тренинг в Томске</div>
-					</header><!-- end header -->
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
+    <div class="bg-main">
+        <div class="container_12">
+            <div>
+                <div class="grid_12">
+                    <!-- header -->
+                    <header>
+                        <h1><a href="#">Игорь Манн</a></h1>
+                        <div class="logo-text">Живой тренинг в Томске</div>
+                    </header><!-- end header -->
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
 		
-		<div class="flexslider">
-			<ul class="slides">
-				<li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
-				    <div class="mann"></div>
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
+                    <div class="mann"></div>
                     <div class="mann-hidden"></div>
-					<div class="flex-caption">
-						<div class="slide-text-1">A new start </div>
-						<div class="slide-text-2">for your business</div>
-						<p class="slide-p">Ses praesentiumvoluptatum delenitimos atqcor rupti quos dolores et quas molestias exceuri occaecati cupiditate non prdent imilique.</p>
-						<a class="slide-button" href="#">more</a>
-					</div>
-				</li>
-			</ul>
+                    <div class="flex-caption">
+                        <div class="slide-text-1">Тренинг Игоря Манна</div>
+                        <div class="slide-text-1" style="margin-top: -8px;">в Томске.</div>
+                        <div class="slide-text-2">4 тренинга за 2 дня.</div>
+                        <p style="font-size: 16px;">Маркетинговая машина<br />Прибавить оборотов/прибыли<br />WOW-маркетинг<br />Клиентомания</p>
+                        <p class="slide-p">Маркетинг – это все, что менеджеры по продаже делать не хотят, не успевают или не могут (с)</p>
+                        <p id="timer" style="margin-bottom: 20px;font-size: 18px;color: black;font-weight: bold;"></p>
+                        <form action="http://rbprofit.justclick.ru/subscribe/process/?rid[0]=iMann&tag=rbprofit_glavnaya" method="post" target="_blank" id="subscr-form-1837" onsubmit="return jc_chkscrfrm(this, true, true, false, false)" >
+                            <table align="left" border="0" cellspacing="0" cellpadding="3">
+                                <tbody>
+                                    <tr>
+                                        <td><input name="lead_name" type="text" onblur='if(this.value=="") this.value="Введите ваше имя"'  onfocus='if(this.value=="Введите ваше имя") this.value=""' value="Введите ваше имя"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input name="lead_email" type="text" onblur='if(this.value=="") this.value="Введите ваш e-mail"'  onfocus='if(this.value=="Введите ваш e-mail") this.value=""' value="Введите ваш e-mail"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input name="lead_phone" type="text" onblur='if(this.value=="") this.value="Введите ваш телефон"'  onfocus='if(this.value=="Введите ваш телефон") this.value=""' value="Введите ваш телефон"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input name="lead_subscribe" type="submit" value="Подписаться на акции!" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <script language="JavaScript" src="http://rbprofit.justclick.ru/media/subscribe/helper2.js.php"></script>
+                            <script language="JavaScript">jc_setfrmfld()</script>
+                        </form>
+                    </div>
+                </li>
+            </ul>
         </div>
 						
-	    <!-- content -->
-	    <section class="section-1 section">
-	        <div class="container_12">
-	            <h1>Игорь Манн в Томске!<br/><div>И что?</div></h1>
-	            <p>Впервые в Томске Игорь Манн проведет 4 тренинга, которые НАВСЕГДА изменят Ваше представление о бизнесе, систематизируют его, помогут привлечь поток входящих клиентов и наладить работу персонала в Вашей компании.</p>
-	            <p>В формате 1 день 2 тренинга Вы получите знания о гарантированном привлечении клиентов (тренинг <a href="#">Маркетинговая машина</a>), о том как делать предложения от которых сложно отказаться (тренинг ВАУ-маркетинг /*кликабельная ссылка*/), о создании общественного резонанса (тренинг Клиентомания /*кликабельная ссылка*/) и также узнаете о том как пошагово увеличивать прибыль в своем бизнесе (тренинг Прибавить Оборотов/Прибыли /*кликабельная ссылка*/).</p>
-	            <div class="img"></div>
-	        </div>
-	    </section>
-	    <section class="section-2 section">
-	        <div class="container_12">
-	            <hr/>
-	            <h1>6 причин пойти на..<br/><div>тренинг:</div></h1>
-	            <ul class="list-1 indent-bot-2">
-	                <li>На тренинге Вы встретите других бизнесменов Вашего уровня и выше, которые могут оказаться Вашими будущими партнерами или клиентами.</li>
-	                <li>Вы сможете получить ответы на вопросы, которые беспкоят лично Вас.</li>
-	                <li>Вы получите невероятное количество идей, которые можно внедрить на следующий день.</li>
-	                <li>Вы сможете лично задать вопрос Игорю Манну.</li>
-	                <li>Вы откроете новые горизонты для себя в Вашем бизнесе.</li>
-	                <li>Вы сможете зарабатывать на 20%-1000% больше, чем сейчас, внедрив лишь часть методик, представленных на тренинге.</li>
-	            </ul>
-                <div class="img"></div>
-	        </div>
-	    </section>
-	    <section class="section-3 section">
-	        <div class="container_12">
-	            <hr/>
-	            <h1>«Маркетинговая машина:<br/><div>как стать хорошим директором</div><div>по маркетингу»</div></h1>
-                
-	            <h2>Для кого предназначается этот тренинг?</h2>
-	            <ul class="list-1 indent-bot-2" style="margin-top: 0;">
-	                <li>Для владельцев и директоров по маркетингу.</li>
-	                <li>Для тех, кто готовится ими стать.</li>
-	            </ul>
-
-	            <h2>Основная задача тренинга:</h2>
-	            <p>Директор по маркетингу, который придет на тренинг, после его окончания должен стать другим директором.<br/>Намного более лучшим.<br/>И его команда – через некоторое время – тоже должна стать лучше.</p>
-                
-                <h2>Основные темы тренинга.</h2>
-	            <p>Я буду говорить только о том, что Вам интересно. Вот основные темы.</p>
-	            <ul class="list-1 indent-bot-2" style="margin-top: 0;">
-	                <li>Эволюция маркетинга не по Котлеру (какие этапы проходит компания в своем развитии маркетинга).</li>
-	                <li>Горячая десятка: что ждет от маркетинга компания в первую очередь.</li>
-	                <li>Точки приложения сил директора (горячие точки!) – лидз, PR, брендинг, инновации...</li>
-	                <li>Части маркетинговой машины: директор (кто такой хороший директор), команда (что такое хорошая команда и как ее создавать), инструменты (чем и как работать), ресурсы (деньги).</li>
-	                <li>Самый простой способ ничего не делать (и все получать).</li>
-	                <li>Потому что мы команда! (поставщики, консультанты, сотрудники).</li>
-	                <li>Хорошие специалисты не делают плохого маркетинга: как определить насколько хороши ваши менеджеры по маркетингу.</li>
-	                <li>Консультанты: когда они Вам нужны? Как выбрать лучших? Как с ними работать?</li>
-	                <li>Поставщики маркетинговых услуг: Как выбрать? Как «выжать» их них по максимуму?</li>
-	                <li>Планирование маркетинга (точка зрения директора).</li>
-	                <li>Бюджетирование маркетинга: просто о сложном (точка зрения директора).</li>
-	                <li>Измерение эффективности маркетинга: закрываем тему (шесть законов маркетера).</li>
-	                <li>Инновации нас спасут (и Вас тоже).</li>
-	                <li>Лояльность: внедрение просто и быстро.</li>
-	                <li>Вы – выдающийся политический деятель (о маркетинге маркетинга).</li>
-	                <li>Будущее маркетинга: будь готов (что с Вашей компанией будет через год?).</li>
-	                <li>100% маркетинговое зрение vs. Маркетинговая близорукость (маркетинг для партнеров, с партнерами и через партнеров).</li>
-	                <li>Подводные камни в работе директора по маркетингу.</li>
-	            </ul>
-	            <p style="">Я провоцирую вопросы. Я считаю, что на тренинги нужно ходить за тремя вещами (я скажу о двух других на тренинге).<br />Третья – получить ответы на все свои вопросы.<br/>Моя практика показывает, что я могу ответить на 90% вопросов.</p>
-
-	            <div class="img"></div>
-	        </div>
-	    </section>
+        <!-- content -->
         <section class="section-1 section">
-	        <div class="container_12">
-	            <h1>Игорь Манн в Томске.<br/><div>И что?</div></h1>
-	            <p>Впервые в Томске Игорь Манн проведет 4 тренинга, которые НАВСЕГДА изменят Ваше представление о бизнесе, систематизируют его, помогут привлечь поток входящих клиентов и наладить работу персонала в Вашей компании.</p>
-	            <p>В формате 1 день 2 тренинга Вы получите знания о гарантированном привлечении клиентов (тренинг <a href="#">Маркетинговая машина</a>), о том как делать предложения от которых сложно отказаться (тренинг ВАУ-маркетинг /*кликабельная ссылка*/), о создании общественного резонанса (тренинг Клиентомания /*кликабельная ссылка*/) и также узнаете о том как пошагово увеличивать прибыль в своем бизнесе (тренинг Прибавить Оборотов/Прибыли /*кликабельная ссылка*/).</p>
+            <div class="container_12">
+                <h1>Игорь Манн в Томске!<br/><div>И что?</div></h1>
+                <p>Впервые в Томске Игорь Манн проведет 4 тренинга, которые НАВСЕГДА изменят Ваше представление о бизнесе, систематизируют его, помогут привлечь поток входящих клиентов и наладить работу персонала в Вашей компании.</p>
+                <p>В формате 1 день 2 тренинга Вы получите знания о гарантированном привлечении клиентов (тренинг <a href="#">Маркетинговая машина</a>), о том как делать предложения от которых сложно отказаться (тренинг <a href="#">ВАУ-маркетинг</a>), о создании общественного резонанса (тренинг <a href="#">Клиентомания</a>) и также узнаете о том как пошагово увеличивать прибыль в своем бизнесе (тренинг <a href="#">Прибавить Оборотов/Прибыли</a>).</p>
                 <div class="img"></div>
             </div>
-	    </section>
-		<section id="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<a class="slogan" href="http://static.livedemo00.template-help.com/wt_39870/#"><img src="@Url.Content("~/Content/images/slogan.png")" alt="" style="opacity: 1;"></a>
-					<div class="indent-bot-7">
-						<div class="grid_8 alpha rt-ident-bottom-1">
-							<div class="rt-block-ident-1 rt-block-ident-x">
-								<h2 class="indent-bot-2">Increase Your Business Potential</h2>
-								<img class="indent-bot-3" src="@Url.Content("~/Content/images/page-1-img-1.jpg")" alt="">
-								<p class="indent-bot-1"><strong>Lorem ipsum eos et accusamu dolore massa fugharum quidemed rerum facilis iusto ssimos ducimus qui blanditiistes.</strong></p>
-								<p class="indent-bot-1">Ses praesentiumvoluptatum delenitimos atqcorrupti quos dolores et quas molestias exceuri occaecati cupiditate non prdent imilique sunt in culpaqui officia mos deserunt mollitia animid est laborum et dolorum fugharum quidemed. Rerum facilis est et expe dita distinc. Nam libero temporecum soluta nobis est eligendi optio cumquenihil. </p>
-								<a class="button" href="http://static.livedemo00.template-help.com/wt_39870/#">More</a>
-							</div>
-						</div>
-						<div class="grid_4 omega">
-							<div class="rt-block-ident-x">
-								<div class="indent-bot-5">
-									<h2 class="indent-bot-4">Free Business Tools</h2>
-									<ul class="list-1 indent-bot-2">
-										<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Business worth and valuation calculator </a></li>
-										<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">List of mini MBA topics </a></li>
-										<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Business Plan Methodology</a></li>
-										<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Employee guidelines </a></li>
-										<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">How to increase sales </a></li>
-										<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Sample customer satisfaction survey</a></li>
-										<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">action videos </a></li>
-									</ul>
-									<a class="button" href="http://static.livedemo00.template-help.com/wt_39870/#">More</a>
-								</div>
-								<div>
-									<h2 class="indent-bot-6">Our Clients</h2>
-									<div class="clients">
-										<a href="http://static.livedemo00.template-help.com/wt_39870/#"><img src="@Url.Content("~/Content/images/banner-1.jpg")" alt=""></a>
-										<a href="http://static.livedemo00.template-help.com/wt_39870/#"><img src="@Url.Content("~/Content/images/banner-2.jpg")" alt=""></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="clear"></div>
-					</div>
-						
-					<div>
-						<div class="grid_3 alpha rt-ident-bottom-1">
-							<div class="border-top rt-block-ident-x">
-								<h3>Latest Tweets </h3>
-								<div class="tweet"><ul class="tweet_list"><li class="tweet_first tweet_odd"><span class="tweet_time"><a href="http://twitter.com/templatehelpcom/status/323800395073851393" title="view tweet on twitter">about 3 hours ago</a></span> <span class="tweet_join">we were checking out</span> <span class="tweet_text">How do I pay with <a href="http://moneybookers.com/">Moneybookers.com</a>? <a href="http://info.template-help.com/help/how-pay-with-moneybookers-com.html">info.template-help.com/help/how-pay-w…</a></span></li><li class="tweet_even"><span class="tweet_time"><a href="http://twitter.com/templatehelpcom/status/323800258071109634" title="view tweet on twitter">about 3 hours ago</a></span> <span class="tweet_join">we were checking out</span> <span class="tweet_text">How to add/change a favicon in HTML-based template <a href="http://info.template-help.com/help/how-to-addchange-a-favicon-in-html-based-template.html">info.template-help.com/help/how-to-ad…</a></span></li></ul></div>
-							</div>
-						</div>
-						<div class="grid_3 rt-ident-bottom-1">
-							<div class="border-top rt-block-ident-x">
-								<h3 class="indent-bot-8">Company</h3>
-								<ul class="list-2">
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">At vero eos et accusamus et    </a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Astom odgnissimos ducimus</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Raesentium dolore mode</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Eluptatm deleniti atque modele</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Atias excepturi sintol occaecati</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Cupiditate non providensim</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Sunt in culpa qui dolore sed </a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="grid_3 rt-ident-bottom-1">
-							<div class="border-top rt-block-ident-x">
-								<h3 class="indent-bot-8">Categories</h3>
-								<ul class="list-2">
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">At vero eos et accusamus et</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Astom odgnissimos ducimus</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Raesentium dolore mode</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Eluptatm deleniti atque modele</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Atias excepturi sintol occaecati</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Cupiditate non providensim</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="grid_3 omega">
-							<div class="border-top rt-block-ident-x">
-								<h3 class="indent-bot-8">capabilities</h3>
-								<ul class="list-2">
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">At vero eos et accusamus et    </a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Astom odgnissimos ducimus</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Raesentium dolore mode</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Eluptatm deleniti atque modele</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Atias excepturi sintol occaecati</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Cupiditate non providensim</a></li>
-									<li><a href="http://static.livedemo00.template-help.com/wt_39870/#">Sunt in culpa qui dolore sed </a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="clear"></div>
-					</div>
-				</div>
-			</div>
-		</section><!-- end content -->
-	</div>
-		
-	<!-- footer -->
-	<footer>
-		<div class="container_12">
-			<div class="grid_12">
-				<div class="rt-block-ident-x">
-					<ul class="list-soc">
-						<li><a href="http://static.livedemo00.template-help.com/wt_39870/#"><img src="@Url.Content("~/Content/images/soc-icon-1.jpg")" alt=""></a></li>
-						<li><a href="http://static.livedemo00.template-help.com/wt_39870/#"><img src="@Url.Content("~/Content/images/soc-icon-2.jpg")" alt=""></a></li>
-						<li><a href="http://static.livedemo00.template-help.com/wt_39870/#"><img src="@Url.Content("~/Content/images/soc-icon-3.jpg")" alt=""></a></li>
-						<li><a href="http://static.livedemo00.template-help.com/wt_39870/#"><img src="@Url.Content("~/Content/images/soc-icon-4.jpg")" alt=""></a></li>
-					</ul>
-					<div class="policy"><img src="@Url.Content("~/Content/images/footer-logo.png")" alt=""> <span class="copy-indent">© 2012 | <a href="http://static.livedemo00.template-help.com/wt_39870/index-6.html">Privacy Policy</a></span> <div><!--{%FOOTER_LINK} --></div></div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
-	</footer><!-- end footer -->
+        </section>
+        <section class="section-2 section">
+            <div class="container_12">
+                <hr/>
+                <h1>6 причин пойти на..<br/><div>тренинг:</div></h1>
+                <ul class="list-1 indent-bot-2">
+                    <li>На тренинге Вы встретите других бизнесменов Вашего уровня и выше, которые могут оказаться Вашими будущими партнерами или клиентами.</li>
+                    <li>Вы сможете получить ответы на вопросы, которые беспкоят лично Вас.</li>
+                    <li>Вы получите невероятное количество идей, которые можно внедрить на следующий день.</li>
+                    <li>Вы сможете лично задать вопрос Игорю Манну.</li>
+                    <li>Вы откроете новые горизонты для себя в Вашем бизнесе.</li>
+                    <li>Вы сможете зарабатывать на 20%-1000% больше, чем сейчас, внедрив лишь часть методик, представленных на тренинге.</li>
+                </ul>
+                <div class="img"></div>
+            </div>
+        </section>
+        <section class="section-3 section">
+            <div class="container_12">
+                <hr/>
+                <h1>«Маркетинговая машина:<br/><div>как стать хорошим директором</div><div>по маркетингу»</div></h1>
+                
+                <h2>Для кого предназначается этот тренинг?</h2>
+                <ul class="list-1 indent-bot-2" style="margin-top: 0;">
+                    <li>Для владельцев и директоров по маркетингу.</li>
+                    <li>Для тех, кто готовится ими стать.</li>
+                </ul>
+
+                <h2>Основная задача тренинга:</h2>
+                <p>Директор по маркетингу, который придет на тренинг, после его окончания должен стать другим директором.<br/>Намного более лучшим.<br/>И его команда – через некоторое время – тоже должна стать лучше.</p>
+                
+                <h2>Основные темы тренинга.</h2>
+                <p>Я буду говорить только о том, что Вам интересно. Вот основные темы.</p>
+                <ul class="list-1 indent-bot-2" style="margin-top: 0;">
+                    <li>Эволюция маркетинга не по Котлеру (какие этапы проходит компания в своем развитии маркетинга).</li>
+                    <li>Горячая десятка: что ждет от маркетинга компания в первую очередь.</li>
+                    <li>Точки приложения сил директора (горячие точки!) – лидз, PR, брендинг, инновации...</li>
+                    <li>Части маркетинговой машины: директор (кто такой хороший директор), команда (что такое хорошая команда и как ее создавать), инструменты (чем и как работать), ресурсы (деньги).</li>
+                    <li>Самый простой способ ничего не делать (и все получать).</li>
+                    <li>Потому что мы команда! (поставщики, консультанты, сотрудники).</li>
+                    <li>Хорошие специалисты не делают плохого маркетинга: как определить насколько хороши ваши менеджеры по маркетингу.</li>
+                    <li>Консультанты: когда они Вам нужны? Как выбрать лучших? Как с ними работать?</li>
+                    <li>Поставщики маркетинговых услуг: Как выбрать? Как «выжать» их них по максимуму?</li>
+                    <li>Планирование маркетинга (точка зрения директора).</li>
+                    <li>Бюджетирование маркетинга: просто о сложном (точка зрения директора).</li>
+                    <li>Измерение эффективности маркетинга: закрываем тему (шесть законов маркетера).</li>
+                    <li>Инновации нас спасут (и Вас тоже).</li>
+                    <li>Лояльность: внедрение просто и быстро.</li>
+                    <li>Вы – выдающийся политический деятель (о маркетинге маркетинга).</li>
+                    <li>Будущее маркетинга: будь готов (что с Вашей компанией будет через год?).</li>
+                    <li>100% маркетинговое зрение vs. Маркетинговая близорукость (маркетинг для партнеров, с партнерами и через партнеров).</li>
+                    <li>Подводные камни в работе директора по маркетингу.</li>
+                </ul>
+                <p style="">Я провоцирую вопросы. Я считаю, что на тренинги нужно ходить за тремя вещами (я скажу о двух других на тренинге).<br />Третья – получить ответы на все свои вопросы.<br/>Моя практика показывает, что я могу ответить на 90% вопросов.</p>
+
+                <div class="img"></div>
+            </div>
+        </section>
+        <section class="section-1 section">
+            <div class="container_12">
+                <h1>Игорь Манн в Томске.<br/><div>И что?</div></h1>
+                <p>Впервые в Томске Игорь Манн проведет 4 тренинга, которые НАВСЕГДА изменят Ваше представление о бизнесе, систематизируют его, помогут привлечь поток входящих клиентов и наладить работу персонала в Вашей компании.</p>
+                <p>В формате 1 день 2 тренинга Вы получите знания о гарантированном привлечении клиентов (тренинг <a href="#">Маркетинговая машина</a>), о том как делать предложения от которых сложно отказаться (тренинг ВАУ-маркетинг /*кликабельная ссылка*/), о создании общественного резонанса (тренинг Клиентомания /*кликабельная ссылка*/) и также узнаете о том как пошагово увеличивать прибыль в своем бизнесе (тренинг Прибавить Оборотов/Прибыли /*кликабельная ссылка*/).</p>
+                <div class="img"></div>
+            </div>
+        </section>
+    </div>
 </div>
+
 <script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-7078796-5']);
-	_gaq.push(['_trackPageview']);
+	
+    setInterval(checkDate, 100);
 
-	(function () {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
+    var targetDate = new Date(2013, 8, 7),
+        days = ['день', 'дня', 'дней'],
+        hours = ['час', 'часа', 'часов'],
+        minutes = ['минута', 'минуты', 'минут'],
+        secondsArray = ['секунда', 'секунды', 'секунд'];
+
+    function checkDate() {
+
+        var now = new Date(),
+            remainSeconds = parseInt((targetDate - now) / 1000),
+            remainDays = '',
+            remainHours = '',
+            remainMinutes = '';
+        if (remainSeconds > 0) {
+            remainDays = parseInt(remainSeconds / (24 * 60 * 60));
+            remainHours = parseInt((remainSeconds - remainDays * 24 * 60 * 60) / (60 * 60));
+            remainMinutes = parseInt((remainSeconds - remainDays * 24 * 60 * 60 - remainHours * 60 * 60) / (60));
+            seconds = parseInt(remainSeconds - remainDays * 24 * 60 * 60 - remainHours * 60 * 60 - remainMinutes * 60);
+            $('#timer').html(remainDays + ' ' + getNumEnding(remainDays, days) + ', ' + remainHours + ' ' + getNumEnding(remainHours, hours) + ', ' + remainMinutes + ' ' + getNumEnding(remainMinutes, minutes) + ', ' + seconds + ' ' + getNumEnding(seconds, secondsArray));
+        } else {
+            document.getElementById('pasteIt').innerHTML = 'Вы всё проспали';
+        }
+    }
+
+    function getNumEnding(iNumber, aEndings) {
+        var sEnding, i;
+        iNumber = iNumber % 100;
+        if (iNumber >= 11 && iNumber <= 19) {
+            sEnding = aEndings[2];
+        }
+        else {
+            i = iNumber % 10;
+            switch (i) {
+            case (1): sEnding = aEndings[0]; break;
+            case (2):
+            case (3):
+            case (4): sEnding = aEndings[1]; break;
+            default: sEnding = aEndings[2];
+            }
+        }
+        return sEnding;
+    }
 </script>
-
-<a href="http://static.livedemo00.template-help.com/wt_39870/#" id="toTop" style="margin-right: -593px; right: 50%; display: none;">
-    <span id="toTopHover"></span>
-</a>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function () { try { w.yaCounter20999635 = new Ya.Metrika({ id: 20999635, webvisor: true, clickmap: true, trackLinks: true, accurateTrackBounce: true, trackHash: true }); } catch (e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/20999635" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
