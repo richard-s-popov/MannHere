@@ -65,7 +65,7 @@ img {
 h1 a {
 	display: block;
 	text-indent: -999em;
-	width: 462px;
+	width: 510px;
 	height: 98px;
 	background: url('../images/logo.png') no-repeat;
 	margin:0 auto;
@@ -96,7 +96,7 @@ strong, strong a {
 /* IDENTS
 ========================================================================= */
 .indent-bot-1 {margin-bottom: 21px;}
-.indent-bot-2 {margin-bottom: 10px;} /* h2 > image */
+.indent-bot-2 {margin-bottom: 10px;margin-top: 25px;} /* h2 > image */
 .indent-bot-3 {margin-bottom: 26px;} /* image > text */
 .indent-bot-4 {margin-bottom: 3px;} /* h2 > list */
 .indent-bot-5 {margin-bottom: 40px;} /* block > block */
@@ -254,9 +254,11 @@ nav {
 
 .list-1 li {
 	padding-left: 18px;
-	padding-top:4px;
+	padding-top:2px;
+    margin-top: 10px;
 	padding-bottom:5px;
 	background: url('../images/marker-1.png') no-repeat 2px 7px;
+    color: rgb(68, 68, 68);
 }
 	.list-1 li a {
 		color: #202020;
@@ -304,6 +306,112 @@ nav {
 .rt-block-ident-1 {padding-right: 80px;}
 
 .rt-hidden-1 {display:none;}
+
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section h1 {
+    font: bold 40px/36px Arial, sans-serif;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.section h2 {
+    font: bold 25px/36px Arial, sans-serif;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-top: 30px;
+}
+
+.section h1 div {
+    font: normal 36px/36px Arial, sans-serif;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-top: -3px;
+}
+
+.section p {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+}
+
+.section a {
+    color: rgb(54, 195, 198);
+    text-decoration: underline;
+}
+
+.section a:hover {
+    text-decoration: none;
+}
+
+.section-1 p {
+    width: 600px;
+}
+
+.section-1 .img {
+    position: absolute;
+    width: 370px;
+    height: 250px;
+    right: 0;
+    top: 45px;
+    background: url(../images/depositphotos_11404273-Business-collection.png);
+}
+
+.section-1 .img:hover {
+    background: url(../images/depositphotos_114204273-Business-collection.png)
+}
+
+.section-2 h1 {
+    margin-left: 360px;
+}
+
+.section-2 .list-1 {
+    margin-left: 345px;
+}
+
+.section-2 .img {
+    position: absolute;
+    width: 250px;
+    height: 330px;
+    left: 0;
+    top: 45px;
+    background: url(../images/depositphotos_11404273-Business-collection.png);
+    background-position: 57% 60%;
+}
+
+.section-2 .img:hover {
+    background: url(../images/depositphotos_114204273-Business-collection.png);
+    background-position: 57% 60%;
+}
+
+.hr-shadow {
+    clear: both;
+    padding: 0 0 2px 0;
+    background: url(../images/hr-shadow.jpg) 0 0 no-repeat;
+}
+
+hr {
+    margin: 0 -2em 2.5em -2em;
+    clear: both;
+    background: #bcbcbc; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 0%, #bcbcbc 10%, #bcbcbc 90%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(10%,#bcbcbc), color-stop(90%,#bcbcbc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#bcbcbc',GradientType=1 ); /* IE6-9 */
+    background: linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%); /* W3C */
+    border: none;
+    height: 1px;
+}
 
 /* BUTTONS, LINKS
 ========================================================================= */
