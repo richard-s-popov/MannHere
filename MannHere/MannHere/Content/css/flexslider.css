@@ -30,6 +30,10 @@ html[xmlns] .slides {display: block;}
     background-image: url(../images/mann2.png);
 }
 
+.flexslider .mann-hidden {
+    background-image: url(../images/mann2.png);
+    display: none;
+}
 
 .flex-caption {
 	position: absolute;
