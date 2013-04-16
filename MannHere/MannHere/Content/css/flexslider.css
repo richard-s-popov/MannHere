@@ -9,12 +9,25 @@ html[xmlns] .slides {display: block;}
 
 .flexslider {
 	width: 100%;
+    height: 470px;
 	margin: 0;
 	position: relative;
+    background-image: url(../images/footer.jpg);
 }
 .flexslider .slides img {
 	max-width: 100%;
 	display: block;
+}
+
+.flexslider .mann {
+    background-image: url(../images/mann1.png);
+    width: 410px;
+    height: 470px;
+    margin-left: 70px;
+}
+
+.flexslider .mann:hover {
+    background-image: url(../images/mann2.png);
 }
 
 

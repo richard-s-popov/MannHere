@@ -339,7 +339,7 @@ nav {
 .section p {
     margin-bottom: 30px;
     margin-top: 30px;
-    color: rgb(68, 68, 68);
+    color: rgb(26, 26, 26);
     font-size: 15px;
 }
 
@@ -390,6 +390,14 @@ nav {
 .section-2 .img:hover {
     background: url(../images/depositphotos_114204273-Business-collection.png);
     background-position: 57% 60%;
+}
+
+.section-3 p {
+    width: 600px;
+}
+
+.section-3 .list-1 {
+    width: 600px;
 }
 
 .hr-shadow {
