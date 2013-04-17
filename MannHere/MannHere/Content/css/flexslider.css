@@ -9,7 +9,7 @@ html[xmlns] .slides {display: block;}
 
 .flexslider {
 	width: 100%;
-    height: 470px;
+    height: 520px;
 	margin: 0;
 	position: relative;
     background-image: url(../images/footer.jpg);
@@ -24,6 +24,7 @@ html[xmlns] .slides {display: block;}
     width: 410px;
     height: 470px;
     margin-left: 70px;
+    margin-top: 50px;
 }
 
 .flexslider .mann:hover {
@@ -40,7 +41,7 @@ html[xmlns] .slides {display: block;}
 	right:66px;
 	top:30px;
 	z-index:1;
-	width:365px;
+	width:400px;
 }
 	.slide-text-1, .slide-text-2  {
 		font: bold 30px/36px Arial, sans-serif;
