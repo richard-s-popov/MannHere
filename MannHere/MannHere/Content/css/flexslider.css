@@ -12,7 +12,7 @@ html[xmlns] .slides {display: block;}
     height: 520px;
 	margin: 0;
 	position: relative;
-    background-image: url(../images/footer.jpg);
+    background-image: url(../images/escheresque.png);
 }
 .flexslider .slides img {
 	max-width: 100%;
