@@ -1,6 +1,7 @@
 #countdown_dashboard {
 	height: 60px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .dash {
@@ -49,5 +50,8 @@
 }
 
 .dash_title {
-	display: none;
+    position: absolute;
+    top: -19px;
+    left: 3px;
+    font-weight: bold;
 }
