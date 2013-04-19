@@ -114,6 +114,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\css\dark.css" />
     <Content Include="Content\css\flexslider.css" />
     <Content Include="Content\css\forms.css" />
     <Content Include="Content\css\reset.css" />
@@ -124,9 +125,18 @@
     <Content Include="Content\images\banner-1.jpg" />
     <Content Include="Content\images\banner-2.jpg" />
     <Content Include="Content\images\body.jpg" />
+    <Content Include="Content\images\bo_play_pattern.png" />
+    <Content Include="Content\images\dark_dash.png" />
+    <Content Include="Content\images\dark_days_dash.png" />
+    <Content Include="Content\images\dark_hours_dash.png" />
+    <Content Include="Content\images\dark_minutes_dash.png" />
+    <Content Include="Content\images\dark_seconds_dash.png" />
+    <Content Include="Content\images\dark_weeks_dash.png" />
     <Content Include="Content\images\depositphotos_11404273-Business-collection.png" />
     <Content Include="Content\images\depositphotos_114204273-Business-collection.png" />
     <Content Include="Content\images\depositphotos_5363535-Business-collection.png" />
+    <Content Include="Content\images\diamond_upholstery.png" />
+    <Content Include="Content\images\escheresque.png" />
     <Content Include="Content\images\footer-logo.png" />
     <Content Include="Content\images\footer.jpg" />
     <Content Include="Content\images\hr-shadow.jpg" />
@@ -134,8 +144,11 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\main.jpg" />
     <Content Include="Content\images\mann.png" />
+    <Content Include="Content\images\mann1.png" />
+    <Content Include="Content\images\mann2.png" />
     <Content Include="Content\images\marker-1.png" />
     <Content Include="Content\images\menu-separ.jpg" />
+    <Content Include="Content\images\menu_bg.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\page-1-img-1.jpg" />
     <Content Include="Content\images\prev.png" />
@@ -159,6 +172,7 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.easing.1.3.js" />
     <Content Include="Scripts\jquery.flexslider-min.js" />
+    <Content Include="Scripts\jquery.lwtCountdown-0.9.5.js" />
     <Content Include="Scripts\jquery.responsivemenu.js" />
     <Content Include="Scripts\jquery.tweet.js" />
     <Content Include="Scripts\jquery.ui.totop.js" />

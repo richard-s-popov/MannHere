@@ -365,6 +365,19 @@ header .when {
     text-decoration: none;
 }
 
+.section .number-list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 600px;
+}
+
+.section .symbol-list {
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 550px;
+}
+
 .section-1 p {
     width: 600px;
 }
