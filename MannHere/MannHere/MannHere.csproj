@@ -126,6 +126,8 @@
     <Content Include="Content\images\banner-2.jpg" />
     <Content Include="Content\images\body.jpg" />
     <Content Include="Content\images\bo_play_pattern.png" />
+    <Content Include="Content\images\button_ok_5724.png" />
+    <Content Include="Content\images\cross_9750.png" />
     <Content Include="Content\images\dark_dash.png" />
     <Content Include="Content\images\dark_days_dash.png" />
     <Content Include="Content\images\dark_hours_dash.png" />

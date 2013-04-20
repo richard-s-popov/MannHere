@@ -532,6 +532,58 @@ header .when {
     width: 295px;
 }
 
+.trenings-table .buttons a {
+    color: white;
+    text-decoration: none;
+}
+
+.trenings-table .buttons td {
+    border: none;
+    border-top: 1px solid black;
+    padding: 0;
+}
+
+.order-table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.order-table .name {
+    font: normal 29px/36px Arial, sans-serif;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-top: -3px;
+    
+}
+
+.order-table td {
+    text-align: center;
+    padding-bottom: 20px;
+    width: 25%
+}
+
+.order-button {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff !important;
+    font: bold 14px Arial, Helvetica;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    display: inline-block;
+    background-color: #3AD5A0;;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    opacity: .9;
+}
+
+.order-button:hover {
+    opacity: 1;
+    box-shadow: 0 1px 10px rgba(0,0,0,.3);
+}
+
 .hr-shadow {
     clear: both;
     padding: 0 0 2px 0;
