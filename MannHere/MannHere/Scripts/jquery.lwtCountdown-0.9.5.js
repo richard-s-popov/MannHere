@@ -108,7 +108,7 @@
 		}
 		else 
 		{
-			days = Math.floor(diffSecs/60/60/24)%7;
+			days = Math.floor(diffSecs/60/60/24)%30;
 			weeks = Math.floor(diffSecs / 60 / 60 / 24 / 7);
 			months = Math.floor(diffSecs / 60 / 60 / 24 / 30);
 		}
