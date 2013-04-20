@@ -429,6 +429,7 @@ header .when {
 .trenings-table {
     text-align: center;
     color: black;
+    width: 100%;
 }
 
 .trenings-table .header-1 {
@@ -508,13 +509,27 @@ header .when {
     border: 1px solid black;
 }
 
+.trenings-table .ok {
+    background-image: url(../images/button_ok_5724.png);
+    width: 22px;
+    height: 20px;
+    margin-left: 55px;
+}
+
+.trenings-table .no {
+    background-image: url(../images/cross_9750.png);
+    width: 20px;
+    height: 20px;
+    margin-left: 55px;
+}
+
 .trenings-table .num {
     width: 40px;
 }
 
 .trenings-table .trenings {
     text-align: left;
-    width: auto;
+    width: 295px;
 }
 
 .hr-shadow {
