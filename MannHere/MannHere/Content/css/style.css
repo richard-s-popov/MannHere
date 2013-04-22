@@ -368,14 +368,14 @@ header .when {
 .section .number-list {
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 600px;
+    width: 800px;
 }
 
 .section .symbol-list {
     margin-left: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 550px;
+    width: 750px;
 }
 
 .section-1 p {
@@ -498,6 +498,13 @@ header .when {
 
 .trenings-table tr {
     height: 30px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.trenings-table .cost {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .trenings-table td {
