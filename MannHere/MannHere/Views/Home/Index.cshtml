@@ -675,19 +675,56 @@
                 <br/>
                 <h1>Сделайте заказ прямо сейчас</h1>
                 <table class="order-table">
-                	<tr>
-                		<td class="name">Минимальная</td>
-                		<td class="name">Стандартная</td>
-                		<td class="name">Вип</td>
-                		<td class="name">Супервип</td>
-                	</tr>
-                	<tr>
-                		<td><a class="order-button" style="background-color: rgb(214, 236, 49);">Заказать</a></td>
-                		<td><a class="order-button" style="background-color: #B3E03F;">Заказать</a></td>
-                		<td><a class="order-button" style="background-color: #7BD553;">Заказать</a></td>
-                		<td><a class="order-button">Заказать</a></td>
-                	</tr>
+                    <tr>
+                        <td class="name">Минимальная</td>
+                        <td class="name">Стандартная</td>
+                        <td class="name">Вип</td>
+                        <td class="name">Супервип</td>
+                    </tr>
+                    <tr>
+                        <td><a id="doOrderMin" class="order-button" href="javascript:void(0);" style="background-color: rgb(214, 236, 49);">Заказать</a></td>
+                        <td><a id="doOrderStandart" class="order-button" href="javascript:void(0);" style="background-color: #B3E03F;">Заказать</a></td>
+                        <td><a id="doOrderVip" class="order-button" href="javascript:void(0);" style="background-color: #7BD553;">Заказать</a></td>
+                        <td><a id="doOrderSuper" class="order-button" href="javascript:void(0);">Заказать</a></td>
+                    </tr>
                 </table>
+                <a id="orderClick" href="#popup"></a>
+                <div style="display:none">
+                    <div id="popup" style="width: 400px;">
+                        <div class="popup">
+                            <h2>Оставьте заявку</h2>
+                            <p>Пожалуйста, корректно заполните поля</p>
+                            <table>
+                                <tr>
+                                    <td class="labels">Имя</td>
+                                    <td>@Html.TextBox("Name")</td>
+                                </tr>
+                                <tr>
+                                    <td class="labels">Телефон</td>
+                                    <td>@Html.TextBox("Phone")</td>
+                                </tr>
+                                <tr>
+                                    <td class="labels">Email</td>
+                                    <td>@Html.TextBox("Email")</td>
+                                </tr>
+                                <tr>
+                                    <td class="labels">Комментарий</td>
+                                    <td>@Html.TextBox("Comment")</td>
+                                </tr>
+                                <tr>
+                                    <td class="labels"></td>
+                                    <td><a id="sendOrder" class="order-button" href="javascript:void(0);">Отправить заявку</a></td>
+                                </tr>
+                            </table>
+                            @Html.Hidden("Training")
+                        </div>
+                    </div>                </div>
+                <a id="wasSent" href="#wasSentPopup"></a>
+                <div style="display:none">
+                    <div id="wasSentPopup" style="width: 400px;">
+                        Заявка отправлена. Спасибо.
+                    </div>
+                </div>
                 <p>
                     *Сначала отвечают на все вопросы присланные по электронной почте спервипами, затем отвечают на вопросы випов, затем на вопросы, купивших стандартную версию и если остается время, то отвечают на вопросы купивших минимальную версию.<br />
                     **Во время тренинга, если возникают вопросы, то сначала отвечают на вопросы супервипов, затем на вопросы випов, затем на вопросы, купивших стандартную версию и после этого на вопросы, купивших минимальную версию.
@@ -700,17 +737,191 @@
 </div>
 
 <script type="text/javascript">
-    
-    $('#countdown_dashboard').countDown({
-        targetDate: {
-            'day': 7,
-            'month': 9,
-            'year': 2013,
-            'hour': 10,
-            'min': 00,
-            'sec': 00
-        },
-        format: 'odHM'
+    $(document).ready(function() {
+        $('#countdown_dashboard').countDown({
+            targetDate: {
+                'day': 7,
+                'month': 9,
+                'year': 2013,
+                'hour': 10,
+                'min': 00,
+                'sec': 00
+            },
+            format: 'odHM'
+        });
+        
+        $("#orderClick").fancybox({
+            showCloseButton: true,
+            scrolling: 'no',
+            centerOnScroll: true,
+            onClosed: function () {
+                
+            },
+            onComplete: function () {
+                $.fancybox.hideActivity();
+            }
+        });
+        
+        $("#wasSent").fancybox({
+            showCloseButton: true,
+            scrolling: 'no',
+            centerOnScroll: true,
+            onClosed: function () {
+
+            },
+            onComplete: function () {
+                $.fancybox.hideActivity();
+            }
+        });
+
+        $('#doOrderMin').click(function () {
+            $('#Training').val("Минимальный");
+            $("#orderClick").click();
+        });
+        
+        $('#doOrderStandart').click(function () {
+            $('#Training').val("Стандарт");
+            $("#orderClick").click();
+        });
+        
+        $('#doOrderVip').click(function () {
+            $('#Training').val("VIP");
+            $("#orderClick").click();
+        });
+        
+        $('#doOrderSuper').click(function () {
+            $('#Training').val("Super VIP");
+            $("#orderClick").click();
+        });
+
+        $('#sendOrder').click(function() {
+            jVal.errors = false;
+            jVal.name();
+            jVal.email();
+            jVal.phone();
+            jVal.sendIt();
+            return false;
+        });
+        
+        var src = '@Url.Content("~/Content/images/button_ok_5724.png")';
+
+        var jVal = {
+            'name': function () {
+                var ele = $('#Name');
+                var pos = ele.position();
+                ele.parent().append('<div id="nameInfo" class="info"></div>');
+                var nameInfo = $('#nameInfo');
+                
+                nameInfo.css({
+                    top: pos.top - 1,
+                    left: pos.left + ele.width() + 15
+                });
+                if ($.trim(ele.val()).length < 3) {
+                    jVal.errors = true;
+                    nameInfo.addClass('error').html('Напишите как к Вам обращаться').show();
+                    nameInfo.prev().addClass('error-input');
+                    ele.removeClass('normal').addClass('wrong');
+                } else if (ele.val().length > 255) {
+                    jVal.errors = true;
+                    nameInfo.addClass('error').html('Превышен максимальный размер 255 символов').show();
+                    ele.removeClass('normal').addClass('wrong').css({ 'font-weight': 'normal' });
+                    nameInfo.prev().addClass('error-input');
+                } else {
+                    nameInfo.removeClass('error');
+                    ele.removeClass('wrong').addClass('normal');
+                    nameInfo.prev().removeClass('error-input');
+                }
+            },
+            'email': function () {
+                var ele = $('#Email');
+                var pos = ele.position();
+                ele.parent().append('<div id="emailInfo" class="info"></div>');
+                var emailInfo = $('#emailInfo');
+                
+                emailInfo.css({
+                    top: pos.top + 4,
+                    left: pos.left + ele.width() + 25
+                });
+
+                var patt = /^.+@@.+[.].{2,}$/i;
+
+                if ($.trim(ele.val()).length > 0) {
+                    if (!patt.test(ele.val())) {
+                        jVal.errors = true;
+                        emailInfo.addClass('error').html('Введите корректный Email').show();
+                        ele.removeClass('normal').addClass('wrong');
+                        emailInfo.prev().addClass('error-input');
+                    } else if (ele.val().length > 50) {
+                        jVal.errors = true;
+                        emailInfo.addClass('error').html('Превышен максимальный размер 50 символов').show();
+                        ele.removeClass('normal').addClass('wrong').css({ 'font-weight': 'normal' });
+                        emailInfo.prev().removeClass('error-input');
+                    } else {
+                        emailInfo.removeClass('error');
+                        ele.removeClass('wrong').addClass('normal');
+                        emailInfo.prev().removeClass('error-input');
+                    }
+                } else {
+                    emailInfo.removeClass('error');
+                    ele.removeClass('wrong').addClass('normal');
+                    emailInfo.prev().removeClass('error-input');
+                }
+            },
+            'phone': function () {
+                var ele = $('#Phone');
+                var pos = ele.position();
+                ele.parent().append('<div id="phoneInfo" class="info"></div>');
+                var phoneInfo = $('#phoneInfo');
+                
+                phoneInfo.css({
+                    top: pos.top + 4,
+                    left: pos.left + ele.width() + 25
+                });
+
+                var patt = /^([\+]{1})?[0-9\-]*$/i;
+
+                if (ele.val().length != 0 && (ele.val().length > 15 || ele.val().length < 5 || !patt.test(ele.val()))) {
+                    jVal.errors = true;
+                    phoneInfo.addClass('error').html('Введите корректный номер телефона').show();
+                    ele.removeClass('normal').addClass('wrong').css({ 'font-weight': 'normal' });
+                    phoneInfo.prev().addClass('error-input');
+                } else if (ele.val().length == 0) {
+                    jVal.errors = true;
+                    phoneInfo.addClass('error').html('Введите номер телефона').show();
+                    ele.removeClass('normal').addClass('wrong').css({ 'font-weight': 'normal' });
+                    phoneInfo.prev().addClass('error-input');
+                } else {
+                    phoneInfo.removeClass('error');
+                    ele.removeClass('wrong').addClass('normal');
+                    phoneInfo.prev().removeClass('error-input');
+                }
+            },
+            'sendIt': function () {
+                if (!jVal.errors) {
+                    $.ajax({
+                        url: '@Url.Action("SendOrder", "Home")',
+                        type: 'POST',
+                        data: {
+                            Name: $('#popup #Name').val(),
+                            Phone: $('#popup #Phone').val(),
+                            Email: $('#popup #Email').val(),
+                            Comment: $('#popup #Comment').val(),
+                            Training: $('#popup #Training').val()
+                        },
+                        success: function (data) {
+                            $('#wasSent').click();
+                        }
+                    });
+
+                    $.fancybox.close();
+                    $.fancybox.showActivity();
+                }
+            }
+        };
+        
+        $('#Name').change(jVal.name);
+        $('#Email').change(jVal.email);
+        $('#Phone').change(jVal.phone);
     });
 </script>
 <!-- Yandex.Metrika counter -->
