@@ -598,6 +598,10 @@ header .when {
     background-color: rgb(54, 195, 198);
 }
 
+.forsite td {
+    border: 1px solid rgb(197, 197, 197);
+}
+
 .popup {
     padding: 10px;
     position: relative;
