@@ -591,6 +591,13 @@ header .when {
     box-shadow: 0 1px 10px rgba(0,0,0,.3);
 }
 
+.offer-button {
+    width: 440px;
+    padding: 26px 60px;
+    font: bold 22px Arial, Helvetica;
+    background-color: rgb(54, 195, 198);
+}
+
 .popup {
     padding: 10px;
     position: relative;
